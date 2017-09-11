@@ -1,0 +1,10 @@
+/debhelper-build-stamp
+/files
+/*.debhelper.log
+/*.substvars
+/libcommons-csv-java-doc/
+/libcommons-csv-java/
+/maven-repo/
+/maven.cleanIgnoreRules
+/maven.publishedRules
+/stamp-poms-patched
