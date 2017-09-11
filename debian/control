@@ -1,0 +1,41 @@
+Source: commons-csv
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Emmanuel Bourg <ebourg@apache.org>
+Build-Depends: debhelper (>= 9),
+               default-jdk,
+               junit4,
+               libcommons-lang3-java,
+               libcommons-io-java,
+               libcommons-parent-java,
+               libh2-java,
+               libmaven-bundle-plugin-java,
+               libmaven-javadoc-plugin-java,
+               maven-debian-helper (>= 1.5)
+Standards-Version: 3.9.8
+Vcs-Git: https://anonscm.debian.org/git/pkg-java/commons-csv.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-java/commons-csv.git
+Homepage: http://commons.apache.org/csv/
+
+Package: libcommons-csv-java
+Architecture: all
+Depends: ${misc:Depends}, ${maven:Depends}
+Suggests: ${maven:OptionalDepends}
+Description: Library for reading and writing CSV files
+ The Apache Commons CSV library provides a simple interface for reading
+ and writing files in variations of the Comma Separated Value (CSV) format.
+ The most common CSV formats are supported (RFC 4180, Excel, MySQL, TDF)
+ and custom formats can be handled using a fluent style API.
+
+Package: libcommons-csv-java-doc
+Architecture: all
+Depends: ${misc:Depends}, ${maven:DocDepends}
+Section: doc
+Description: Library for reading and writing CSV files (documentation)
+ The Apache Commons CSV library provides a simple interface for reading
+ and writing files in variations of the Comma Separated Value (CSV) format.
+ The most common CSV formats are supported (RFC 4180, Excel, MySQL, TDF)
+ and custom formats can be handled using a fluent style API.
+ .
+ This package contains the API documentation for libcommons-csv-java.
